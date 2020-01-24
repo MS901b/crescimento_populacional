@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name=viewport content="width=device-width,initial-scale=1" />
+
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" media="screen, projection" title="normal" />
+    <link rel="alternate stylesheet" type="text/css" href="css/estilo2.css" title="grande" />
+
+    <link rel="stylesheet" type="text/css" href="css/popup.css" media="screen, projection" />
+    <link rel="stylesheet" type="text/css" href="css/notas.css" media="screen, projection" />
+    <link rel="stylesheet" type="text/css" href="css/bloco.css" media="screen, projection" />
+    <link rel="stylesheet" type="text/css" href="css/calculadora.css" media="screen, projection" />
+
+    <!--[if IE 7]>
+			<link rel="stylesheet" type="text/css" href="css/estilo_ie7.css" media="screen, projection" />
+		<![endif]-->
+    <!--[if lte IE 6]>	
+			<link rel="stylesheet" type="text/css" href="css/estilo_ie6.css" media="screen, projection" />
+		<![endif]-->
+
+    <script type="text/javascript" src="scripts/AC_RunActiveContent.js"></script>
+    <script type="text/javascript" src="scripts/protoaculous.js"></script>
+    <script type="text/javascript" src="scripts/salvaLocal.js"></script>
+    <script type="text/javascript" src="scripts/popup.js"></script>
+    <script type="text/javascript" src="scripts/notas.js"></script>
+    <script type="text/javascript" src="scripts/bloco.js"></script>
+    <script type="text/javascript" src="scripts/calculadora.js"></script>
+    <script type="text/javascript" src="scripts/rolagem.js"></script>
+
+    <!-- O arquivo referencias.js e curiosidades.js devem ser incluídos depois do interface -->
+    <script type="text/javascript" src="scripts/interface.js"></script>
+    <script type="text/javascript" src="scripts/referencias.js"></script>
+    <script type="text/javascript" src="scripts/curiosidades.js"></script>
+
+    <!-- O arquivo exemplo_correcao.js que contem as funções que corrigem, deve ser incluido antes do exemplo_conteudo.js-->
+    <!-- O arquivo inputs.js deve ser incluído por último -->
+    <script type="text/javascript" src="scripts/m3_geral.js"></script>
+    <script type="text/javascript" src="scripts/populacoes.js"></script>
+    <script type="text/javascript" src="scripts/populacoes_atv2_correcao.js"></script>
+    <script type="text/javascript" src="scripts/populacoes_atv2_conteudo.js"></script>
+    <script type="text/javascript" src="scripts/inputs.js"></script>
+
+    <!-- arquivo de script para geogebra -->
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+
+    <script type="text/javascript">
+        var PosicaoAtual = {
+            Atividade: 2,
+            Parte: 2
+        };
+        var ProximaParte = 'atividade2_parte4.html';
+        var Links = $H({
+            ponto_azul: {
+                conteudo: '<img src="imgs/ponto_azul.png" width="30px" alt=""/>',
+                layout: ['seta_baixo', 'esquerda'],
+                largura: 2
+            }
+        });
+    </script>
+
+    <title>Crescimento Populacional</title>
+</head>
+
+<body>
+    <!--
+	Nunca crie um "onload" aqui, use a Classe Event do Prototype: Event.observe(window, 'load', funcaoAqui);
+	Veja um exemplo no arquivo exemplo_correcao.js
+	-->
+    <div id="container">
+        <div id="cabecalho">
+            <div id="onde_estou">
+                <div class="numero_atividade">2</div>
+                <h1>Crescimento Populacional</h1> <img src="img_layout/setinha-cabecalho.gif" alt="" />
+                <h2>Modelo de Verhulst</h2>
+            </div>
+            <div id="logo"></div>
+            <div id="links">
+                <a id="mapa" href="mapa.html">Mapa</a>
+                <a href="introducao.html">Introdução</a>
+                <a href="index.html">Início</a>
+            </div>
+
+            <div class="limpador"></div>
+        </div>
+        <!-- Por enquanto o controle de partes trancadas não será implementado-->
+        <ul id="partes">
+        </ul>
+
+        <div id="software">
+            <div id="conteudo">
+                <!--
+                <object id="SalvaLocal" name="SalvaLocal" type="application/x-shockwave-flash" data="applets/SalvaLocal.swf" width="1" height="1">
+						<param name="menu" value="false" />
+						<param name="movie" value="applets/SalvaLocal.swf" />
+                    </object>
+                -->
+
+                <div class="texto_solto">
+                    <p>
+                        Agora, você desenvolverá algumas previsões.
+                    </p>
+                </div>
+
+                <div class="caixa instrucoes">
+                    <h2>Instruções</h2>
+                    <p>
+                        Movimente o <a id="ponto_azul">ponto azul</a> para obter o valor de R(n) de acordo com o tamanho da população.
+                    </p>
+                </div>
+
+                <div id="questoes">
+
+                    <!--
+						Para o Script se localizar, essa div "texto_genérico" é necessária. Caso não tenha texto aqui, deixe ela vazia.
+						Coloque aqui qualquer texto genérico de instruções e teoria.
+						-->
+                    <div id="texto_generico">
+                    </div>
+
+
+                    <!-- Aqui vão ser colocadas as questões, via JavaScript.-->
+                    <div id="parte3_q2"></div>
+                    <p>
+                        Veja que a população sempre aumenta, mas a taxa de crescimento vai diminuindo.
+                    </p>
+
+                    <a href="javascript:;" id="corrigir_tudo">Corrigir todas as questões</a>
+                    <a id="link_continuar">
+                        <span class="escondido">Continuar</span>
+                    </a>
+                    <div class="limpador"></div>
+                </div>
+            </div>
+        </div>
+        <br class="limpador" />
+        <div id="rodape">
+            <a href="http://m3.ime.unicamp.br" target="_blank">Sobre o Matemática Multimídia</a>
+        </div>
+    </div>
+    <div id="applet">
+        <div id="borda_applet" class="altura_applet_5 borda sem_fundo">
+            <!--
+            <applet name="ggbApplet" code="geogebra.GeoGebraApplet" codebase="./" archive="jars/geogebra.jar" width="519" height="460" MAYSCRIPT>
+                <param name="filename" value="applets/a2p3.ggb" />
+                <param name="framePossible" value="false" />
+                <param name="showResetIcon" value="false" />
+                <param name="enableRightClick" value="false" />
+                <param name="enableShiftDragZoom" value="false" />
+                <param name="errorDialogsActive" value="false" />
+                <param name="showMenuBar" value="false" />
+                <param name="showToolBar" value="false" />
+                <param name="showToolBarHelp" value="false" />
+                <param name="showAlgebraInput" value="false" />
+                <param name="enableLabelDrags" value="false" />
+                <param name="scriptable" value="true" />
+            </applet>
+            -->
+
+            <div id="ggbApplet"></div>
+            <script>
+                var ggbApp = new GGBApplet({
+                    "appName": "classic",
+                    "width": 519,
+                    "height": 459,
+                    "filename": "applets/a2p3.ggb",
+                    "showResetIcon": false,
+                    "enableRightClick": false,
+                    "enableShiftDragZoom": false,
+                    "errorDialogsActive": false,
+                    "showMenuBar": false,
+                    "showToolBar": false,
+                    "showToolBarHelp": false,
+                    "showAlgebraInput": false,
+                    "enableLabelDrags": false,
+                    "useBrowserForJS": true
+                }, true);
+                window.addEventListener("load", function() {
+                    ggbApp.inject('ggbApplet');
+                });
+            </script>
+
+            <div class="canto sup_esq"></div>
+            <div class="canto sup_dir"></div>
+            <div class="canto inf_esq"></div>
+            <div class="canto inf_dir"></div>
+            <div id="associacao"></div>
+        </div>
+    </div>
+
+    <div id="associado"></div>
+
+    <div id="ferramentas">
+        <a href="javascript:;" onclick="return false;" id="link_notas"><span class="escondido">referencias</span></a>
+        <a href="javascript:;" onclick="return false;" id="link_bloco"><span class="escondido">bloco de notas</span></a>
+        <!--
+        <a href="javascript:;" id="link_calculadora" onclick="javascript:calculadora();"><span class="escondido">calculadora</span></a>
+        <a href="javascript:setActiveStyleSheet('grande');" id="link_acessibilidade"><span class="escondido">acessibilidade</span></a>
+        -->
+    </div>
+    <div id="calc" class="escondido"></div>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/abertura.css" media="screen, projection" title="normal" />
+    <link rel="alternate stylesheet" type="text/css" href="css/abertura2.css" media="screen, projection" title="grande" />
+
+    <link rel="stylesheet" type="text/css" href="css/popup.css" media="screen, projection" />
+    <link rel="stylesheet" type="text/css" href="css/notas.css" media="screen, projection" />
+    <link rel="stylesheet" type="text/css" href="css/bloco.css" media="screen, projection" />
+    <link rel="stylesheet" type="text/css" href="css/calculadora.css" media="screen, projection" />
+
+    <script type="text/javascript" src="scripts/AC_RunActiveContent.js"></script>
+    <script type="text/javascript" src="scripts/protoaculous.js"></script>
+    <script type="text/javascript" src="scripts/salvaLocal.js"></script>
+    <script type="text/javascript" src="scripts/popup.js"></script>
+    <script type="text/javascript" src="scripts/notas.js"></script>
+    <script type="text/javascript" src="scripts/bloco.js"></script>
+    <script type="text/javascript" src="scripts/calculadora.js"></script>
+
+    <script type="text/javascript" src="scripts/interface.js"></script>
+    <script type="text/javascript" src="scripts/referencias.js"></script>
+    <script type="text/javascript" src="scripts/curiosidades.js"></script>
+
+    <script type="text/javascript" src="scripts/conteudo_introducao.js"></script>
+
+    <script type="text/javascript">
+        var PosicaoAtual = {
+            Atividade: 0,
+            Parte: 0
+        };
+    </script>
+
+    <title>Crescimento Populacional</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="cabecalho">
+            <div id="onde_estou">
+                <h1>Crescimento Populacional</h1> <img src="img_layout/setinha-cabecalho.gif" alt="" />
+                <h2>Introdução</h2>
+            </div>
+            <div id="logo"></div>
+            <div id="links">
+                <a href="mapa.html">Mapa</a>
+                <span>Introdução</span>
+                <a href="index.html">Início</a>
+            </div>
+            <br class="limpador" />
+        </div>
+        <div id="abertura">
+            <div id="conteudo">
+                <!--
+                <object id="SalvaLocal" name="SalvaLocal" type="application/x-shockwave-flash" data="applets/SalvaLocal.swf" width="1" height="1">
+						<param name="menu" value="false" />
+						<param name="movie" value="applets/SalvaLocal.swf" />
+                    </object>
+                -->
+                <div id="texto_abertura">
+                    <p>
+                        O mundo está cada vez mais lotado de pessoas? As cidades brasileiras não param de aumentar? Lavouras sofrem com a invasão de milhares de insetos devoradores? Uma hora depois de escovar os dentes, já existem milhões de bactérias na sua boca? Após 30 minutos
+                        fora da geladeira o seu iogurte já estragou?
+                    </p>
+                    <p>
+                        Tudo isso tem a ver com o crescimento populacional de seres vivos, sejam eles humanos, insetos, bactérias ou fungos.
+                    </p>
+                    <p>
+                        Movidos por essas e outras questões, diversos cientistas, ao longo da história, se preocuparam em compreender a dinâmica de crescimento das mais diversas variedades de populações.
+                    </p>
+                    <p>
+                        Thomas Malthus e Pierre François Verhulst foram dois desses cientistas. Neste software, você poderá conhecer a teoria de cada um deles.
+                    </p>
+                    <p>
+                        <strong>Importante:</strong> não use o ponto como separador de milhares, ou seja, um milhão deve ser escrito assim "1000000", e não assim "1.000.000".
+                    </p>
+                    <div class="a_esquerda">
+                        <div class="a_esquerda apontador">
+                            <a href="mapa.html">Começar</a>
+                        </div>
+                        <div class="a_esquerda seta_apontador"></div>
+                    </div>
+                </div>
+                <div id="imgs_abertura">
+                    <img src="imgs/malthus_60.jpg">
+                    <br class="limpador">
+                    <br class="limpador">
+                    <img src="imgs/verhulst_60.jpg">
+                </div>
+                <br class="limpador">
+            </div>
+        </div>
+        <br class="limpador" />
+        <div id="rodape">
+            <a href="http://m3.mat.br" target="_blank">Sobre o Matemática Multimídia</a>
+        </div>
+    </div>
+    <div id="ferramentas">
+        <a href="javascript:;" onclick="return false;" id="link_notas"><span class="escondido">referencias</span></a>
+        <a href="javascript:;" onclick="return false;" id="link_bloco"><span class="escondido">bloco de notas</span></a>
+        <a href="javascript:;" id="link_calculadora" onclick="javascript:calculadora();"><span class="escondido">calculadora</span></a>
+        <a href="javascript:setActiveStyleSheet('grande');" id="link_acessibilidade"><span class="escondido">acessibilidade</span></a>
+    </div>
+    <div id="calc" class="escondido"></div>
+</body>
+
+</html>

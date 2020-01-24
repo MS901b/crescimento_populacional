@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recurso>
+    <titulo>Crescimento Populacional</titulo>
+    <descricao>Neste software o aluno vai explorar numérica e graficamente dois modelos matemáticos para descrever o crescimento populacional de seres vivos, o de Malthus e o de Verhulst.</descricao>
+    <estado>Finalizado</estado>
+    <imagem>malthus.jpg</imagem>
+    <tipo>Software educacional</tipo>
+    <objetivos>1. Estudar dois modelos de crescimento populacional;2.  Explorar o crescimento exponencial de uma população – o modelo de Malthus; 3. Explorar o crescimento populacional com restrições – o modelo de Verhulst; 4 Fazer análise de gráficos.</objetivos>
+    <observacoes>requisitos de software:  Navegador moderno (Internet Explorer 7.0+ ou Firefox 3.0+), Adobe Flash Player 9.0+ e máquina Java 1.5+. </observacoes>
+    <nivel>Ensino Médio</nivel>
+    <componente>Matemática</componente>
+    <temas>Números e funções</temas>
+    <autores>Samuel Rocha de Oliveira, Leonardo Barichello</autores>
+    <palavras_chaves>crescimento populacional, exponencial, malthus, verhulst, modelo, modelagem, </palavras_chaves>
+    <assunto>Progressão geométrica; Função exponencial; Crescimento populacional; Modelo de Malthus e Modelo de Verhulst.</assunto>
+</recurso>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<software nome="populacoes">
+
+	<!-- 1: 1a Atividade -->
+	<item><id>a1</id>
+		<tipo>atividade</tipo>
+		<rotulo>1</rotulo>
+		<nome>Atividade 1 - Modelo de Malthus</nome>
+		<descricao>Nesta atividade, você conhecerá o modelo de Malthus.</descricao>
+		<posicao>
+			<coluna>1</coluna>
+			<altura>1</altura>
+		</posicao>
+	</item>
+	
+	<!-- 2: 2a Atividade -->
+	<item><id>a2</id>
+		<tipo>atividade</tipo>
+		<rotulo>2</rotulo>
+		<nome>Atividade 2 - Modelo de Verhulst</nome>
+		<descricao>Nesta atividade, você conhecerá o modelo de Verhulst.</descricao>
+		<posicao>
+			<coluna>2</coluna>
+			<altura>1</altura>
+		</posicao>
+		<ligacoes>
+			<com>a1</com>
+		</ligacoes>
+	</item>
+		
+</software>
