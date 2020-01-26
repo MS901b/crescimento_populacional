@@ -77,14 +77,6 @@
         <div id="abertura">
             <div id="conteudo">
                 <a id="limpar" style="position:absolute; right:20px; top: 20px; color:RGB(210,25,42); font-weight:bold; ">Limpar dados</a>
-                <!--
-				<object id="Mapinha" name="Mapinha" type="application/x-shockwave-flash" data="applets/Mapinha.swf" width="960" height="480" wmode="transparent">
-						<param name="menu" value="false" />
-						<param name="movie" value="applets/Mapinha.swf" />
-						<param name="allowScriptAccess" value="sameDomain" />
-						<param name="wmode" value="transparent">
-					</object>
-				-->
             </div>
         </div>
         <br class="limpador" />
@@ -97,7 +89,7 @@
         fetch("scripts/estrutura.xml")
             .then(function(response) {
                 response.text().then(function(data) {
-                    const m = new Mapinha("conteudo", "Embaralhamento");
+                    const m = new Mapinha("conteudo", nomeSoft);
                     m.parseXml(data);
                     m.adicionaBotoesItens();
                 });
