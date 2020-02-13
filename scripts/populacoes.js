@@ -61,10 +61,12 @@ function setAtividade(nome,estado,forcar) {
 }
 
 function valida(valor) {
-	valor = valor.replace('.',',');
+
 	if ((valor==null) || (valor=='undefined')) {
 		return '';
 	}
+	else valor = valor.replace('.',',');
+
 	return valor;
 }
 
