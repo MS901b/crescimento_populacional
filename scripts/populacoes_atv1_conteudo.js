@@ -94,13 +94,13 @@ var Questoes = [{ //Parte 1
                     { //B
                         tipo: 'input',
                         corrigir: corrige_q_4_b,
-                        enunciado: 'Depois de a população de bactérias chegar a  600 mil, quanto tempo será necessário para ela aumentar em mais 500 mil, ou seja, chegar a, aproximadamente, 1100 mil?',
+                        enunciado: 'Depois da população de bactérias chegar a 600 mil, quanto tempo, a mais, será necessário para ela aumentar em mais 500 mil, ou seja, chegar a, aproximadamente, 1100 mil?',
                         msgErro: 'Movimente o ponto azul para encontrar a resposta. Você deve descobrir quanto tempo transcorreu desde que a população atingiu 600 mil indivíduos.'
                     },
                     { //C
                         tipo: 'input',
                         corrigir: corrige_q_4_c,
-                        enunciado: 'Após atingir 1100 mil indivíduos, , quanto tempo será necessário para a população aumentar em mais 500 mil, ou seja, a chegar a, aproximadamente, 1600 mil?',
+                        enunciado: 'Após atingir 1100 mil indivíduos, quanto tempo, a mais, será necessário para a população aumentar em mais 500 mil, ou seja, a chegar a, aproximadamente, 1600 mil?',
                         msgErro: 'Movimente o ponto azul para encontrar a resposta. Você deve descobrir quanto tempo transcorreu desde que a população atingiu 1100 mil indivíduos.'
                     }
                 ]
@@ -120,13 +120,15 @@ var Questoes = [{ //Parte 1
                     { //B
                         tipo: 'input',
                         corrigir: corrige_q_5_b,
-                        enunciado: 'Depois de quadruplicar pela primeira vez, quanto tempo será necessário para que a população quadruplique novamente, ou seja, atinja 1600 mil indivíduos?',
+                        enunciado: 'Depois de quadruplicar pela primeira vez, quanto tempo a mais será necessário para que a população quadruplique novamente, ou seja, atinja 1600 mil indivíduos? Se você indicar os cálculos corretamente, o próprio software realizará as contas para você.',
+                        msgAjuda: 'Para calcular o tempo excedente, podemos calcular a diferença (usando "-") entre os períodos.',
                         msgErro: 'Mova o ponto azul até que a população chegue a 1600 mil. Você deve descobrir quanto tempo transcorreu desde que a população atingiu 400 mil indivíduos.'
                     },
                     { //C
                         tipo: 'input',
                         corrigir: corrige_q_5_c,
                         enunciado: 'Para quadruplicar novamente, quanto tempo a mais será preciso?',
+                        msgAjuda: 'Para calcular o tempo excedente, podemos calcular a diferença (usando "-") entre os períodos.',
                         msgErro: 'Mova o ponto azul até que a população chegue a 6400 mil. Você deve descobrir quanto tempo transcorreu desde que a população atingiu 1600 mil indivíduos.'
                     }
                 ]
