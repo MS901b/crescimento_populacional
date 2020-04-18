@@ -59,7 +59,7 @@ var Questoes = [{ //Parte 1
                     corrigir: corrige_q_2,
                     antes: 'P(n) =',
                     enunciado: 'Qual é a expressão que fornece o número de indivíduos dessa população de bactérias em função do número n de períodos de 30 minutos?',
-                    msgAjuda: 'Use os símbolos de +, -, *, / e ^ para indicar soma subtração, multiplicação e potenciação, respectivamente. Se você indicar os cálculos corretamente, o próprio software realizará as contas pra você.',
+                    msgAjuda: 'Use os símbolos de +, -, *, / e ^ para indicar soma, subtração, multiplicação, divisão e potenciação, respectivamente.Se você indicar os cálculos corretamente, o próprio software realizará as contas pra você.',
                     msgErro: 'Tente encontrar um padrão na maneira como você calculou os valores respondidos na questão 1.'
                 }]
             }
