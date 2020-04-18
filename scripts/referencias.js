@@ -7,12 +7,10 @@
 */
 
 
-var Referencias = new Array(
-	{
-		titulo: 'Referência',
-		link: 'sonho',
-		texto: [
-			'Se você deseja saber mais sobre modelos de crescimento populacional, assista ao vídeo O Sonho, disponível no portal do projeto M&#179;: <a href="http://m3.mat.br" target="_blank">www.m3.mat.br</a>'
-		]
-	}
-);
+var Referencias = new Array({
+    titulo: 'Referência',
+    link: 'sonho',
+    texto: [
+        'Se você deseja saber mais sobre modelos de crescimento populacional, assista ao vídeo O Sonho, disponível no portal do projeto M&#179;:<a href="https://m3.ime.unicamp.br/recursos/1140" target="_blank";">http://m3.ime.unicamp.br</a> ou <a href="https://youtu.be/bHaGjxLdGzo" target="_blank";">youtube</a>.'
+    ]
+});
