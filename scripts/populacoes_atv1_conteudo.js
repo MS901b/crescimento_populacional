@@ -176,5 +176,5 @@ var Questoes = [{ //Parte 1
 var MeuBloco = new Array();
 
 Event.observe(window, 'load', function() {
-    BlocoNotas = new Blocao();
+    BlocoNotas = new Bloco();
 });
